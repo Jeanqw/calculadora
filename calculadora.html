@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora | DevBSB</title>
+    
+        <!-- FONT ROTOBO -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    
+        <!-- STYLE CSS -->
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+    
+        <!-- CALCULATOR -->
+        <div class="calculator">
+    
+            <!-- DISPLAY -->
+            <input type="text" id="display" readonly>
+
+            <!-- <BUTTONS -->
+            <div class="row">
+                <button class="button purple-text" onclick="limpar()">AC</button>
+                <div></div>
+                <div></div>
+                <button class="button gray" onclick="addOperation('/')">/</button>
+            </div>
+    
+            <div class="row">
+                <button class="button" onclick="addNumber('7')">7</button>
+                <button class="button" onclick="addNumber('8')">8</button>
+                <button class="button" onclick="addNumber('9')">9</button>
+                <button class="button gray" onclick="addOperation('*')">*</button>
+            </div>
+    
+            <div class="row">
+                <button class="button" onclick="addNumber('4')">4</button>
+                <button class="button" onclick="addNumber('5')">5</button>
+                <button class="button" onclick="addNumber('6')">6</button>
+                <button class="button gray" onclick="addOperation('-')" > - </button>
+            </div>
+    
+            <div class="row">
+                <button class="button" onclick="addNumber('1')">1</button>
+                <button class="button" onclick="addNumber('2')">2</button>
+                <button class="button" onclick="addNumber('3')">3</button>
+                <button class="button gray" onclick="addOperation('+')">+</button>
+            </div>
+    
+            <div class="row">
+                <div></div>
+                <button class="button" onclick="addNumber('0')">0</button>
+                <button class="button"  onclick="addNumber('.')" >.</button>
+                <button class="button purple" onclick="botaoIgual()">=</button>
+            </div>
+            <!-- BUTTONS/> -->
+        </div>
+
+    <script src="control.js"></script>
+    </body>
+
+</html>
